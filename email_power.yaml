@@ -1,0 +1,43 @@
+- name: Check VM Power State
+  hosts: localhost
+  gather_facts: no
+  collections:
+    - community.vmware
+  vars:
+    esxi_server: "x.x.x.x"
+    esxi_username: "root"
+    esxi_password: "passwd"
+    output_file: "ansible_output.json"  # Define the output file name
+
+  tasks:
+    - name: Gather vmware host facts
+      community.vmware.vmware_host_facts:
+        hostname: "{{ esxi_server }}"
+        username: "{{ esxi_username }}"
+        password: "{{ esxi_password }}"
+        validate_certs: no
+      register: host_facts
+      delegate_to: localhost
+
+    - name: Get VM power state
+      community.vmware.vmware_vm_info:
+        hostname: "{{ esxi_server }}"
+        username: "{{ esxi_username }}"
+        password: "{{ esxi_password }}"
+        validate_certs: no
+      register: vm_info
+      delegate_to: localhost
+
+    - name: Display VM power status
+      debug:
+        msg: "VM {{ item.guest_name }} is {{ item.power_state }}"
+      loop: "{{ vm_info.virtual_machines }}"
+      loop_control:
+        loop_var: item
+
+    - name: Save Ansible Output to File
+      copy:
+        content: "{{ vm_info.virtual_machines | to_nice_json }}"
+        dest: "{{ output_file }}"
+      delegate_to: localhost
+

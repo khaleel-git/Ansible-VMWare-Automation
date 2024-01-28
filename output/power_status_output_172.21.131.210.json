@@ -1,0 +1,89 @@
+{
+    "changed": false,
+    "failed": false,
+    "virtual_machines": [
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S1-datastore1-186GB",
+                    "url": "/vmfs/volumes/607aabc6-beba6e90-7a86-e0071bf36900/"
+                },
+                {
+                    "name": "S1-datastore3-10.92TB",
+                    "url": "/vmfs/volumes/615f5199-21121198-3e32-e0071bf36900/"
+                },
+                {
+                    "name": "S1-datastore2-319GB",
+                    "url": "/vmfs/volumes/6051ce63-859e37c8-5f9d-e0071bf36900/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S1-ONE",
+            "instance_uuid": "5022019c-fb59-e720-18ea-bd3f80a43084",
+            "ip_address": "192.168.150.1",
+            "mac_address": [
+                "00:50:56:a2:fe:50",
+                "00:50:56:a2:db:ba",
+                "00:0c:29:5d:ce:3f"
+            ],
+            "moid": "8",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "4222c6bf-38b8-2d06-3f4a-562c865dce2b",
+            "vm_network": {
+                "00:0c:29:5d:ce:3f": {
+                    "ipv4": [
+                        "2.2.2.211"
+                    ],
+                    "ipv6": [
+                        "fe80::1d27:ba47:24fd:57b"
+                    ]
+                },
+                "00:50:56:a2:db:ba": {
+                    "ipv4": [
+                        "169.254.47.215"
+                    ],
+                    "ipv6": []
+                },
+                "00:50:56:a2:fe:50": {
+                    "ipv4": [
+                        "172.21.131.211"
+                    ],
+                    "ipv6": []
+                },
+                "00:50:56:c0:00:01": {
+                    "ipv4": [
+                        "192.168.150.1"
+                    ],
+                    "ipv6": [
+                        "fe80::dc05:3970:83f6:2a2c"
+                    ]
+                },
+                "00:50:56:c0:00:08": {
+                    "ipv4": [
+                        "192.168.159.1"
+                    ],
+                    "ipv6": [
+                        "fe80::91f2:56ca:1258:35ca"
+                    ]
+                },
+                "3a:4c:85:a9:d6:4c": {
+                    "ipv4": [
+                        "10.147.20.211"
+                    ],
+                    "ipv6": [
+                        "fc99:d982:ae71:249f:42f3::1",
+                        "fe80::f4c3:1c2a:1e04:e818"
+                    ]
+                }
+            }
+        }
+    ]
+}

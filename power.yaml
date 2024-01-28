@@ -1,0 +1,48 @@
+- name: Check VM Power State
+  hosts: localhost
+  gather_facts: no
+  collections:
+    - community.vmware
+
+  vars:
+    esxi_server: "172.21.131.220"
+    esxi_username: "root"
+    esxi_password: "my_passwd"
+
+  tasks:
+    - name: Gather vmware host facts
+      community.vmware.vmware_host_facts:
+        hostname: "{{ esxi_server }}"
+        username: "{{ esxi_username }}"
+        password: "{{ esxi_password }}"
+        validate_certs: no
+      register: host_facts
+      delegate_to: localhost
+
+    - name: Get VM power state
+      community.vmware.vmware_vm_info:
+        hostname: "{{ esxi_server }}"
+        username: "{{ esxi_username }}"
+        password: "{{ esxi_password }}"
+        validate_certs: no
+      register: vm_info
+      delegate_to: localhost
+
+    - name: Display VM power status
+      debug:
+        msg: "VM {{ item.guest_name }} is {{ item.power_state }}"
+      loop: "{{ vm_info.virtual_machines }}"
+      loop_control:
+        loop_var: item
+
+    - name: Save VM power state to JSON file
+      copy:
+        content: "{{ vm_info | to_nice_json }}"
+        dest: /home/khaleel/Ansible/VMWare/output/power_status_output.json
+        mode: '0644'
+      delegate_to: localhost
+
+    - name: Send Email
+      ansible.builtin.shell: python3 /home/khaleel/Ansible/VMWare/power_status_email.py
+      become: yes
+

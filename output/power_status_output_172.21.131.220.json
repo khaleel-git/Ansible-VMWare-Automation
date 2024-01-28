@@ -1,0 +1,195 @@
+{
+    "changed": false,
+    "failed": false,
+    "virtual_machines": [
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S2-datastore1-2TB",
+                    "url": "/vmfs/volumes/60474c5a-02c113f0-ac98-e0071bf7775c/"
+                },
+                {
+                    "name": "S2-datastore2-43.6TB",
+                    "url": "/vmfs/volumes/604a1f1a-a8a706e8-9521-e0071bf7775c/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S2-ONE",
+            "instance_uuid": "52392c01-2ba6-b8ad-a9af-e9f559c93e65",
+            "ip_address": "2.2.2.221",
+            "mac_address": [
+                "00:0c:29:a8:5d:3b",
+                "00:50:56:a2:ad:d7",
+                "00:50:56:a2:d6:76"
+            ],
+            "moid": "1",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "564db509-58dd-15c2-f034-006e79a85d3b",
+            "vm_network": {
+                "00:0c:29:a8:5d:3b": {
+                    "ipv4": [
+                        "172.21.131.221"
+                    ],
+                    "ipv6": [
+                        "fe80::7cf8:ca06:d10a:2ecb"
+                    ]
+                },
+                "00:50:56:a2:ad:d7": {
+                    "ipv4": [
+                        "1.1.1.221"
+                    ],
+                    "ipv6": []
+                },
+                "00:50:56:a2:d6:76": {
+                    "ipv4": [
+                        "2.2.2.221"
+                    ],
+                    "ipv6": [
+                        "fe80::c983:256c:fc7a:a2f8"
+                    ]
+                },
+                "3a:76:33:1b:6e:30": {
+                    "ipv4": [
+                        "10.147.20.221"
+                    ],
+                    "ipv6": [
+                        "fc99:d982:ae4b:922d:fa8f::1",
+                        "fe80::7d4c:ad99:e9f1:c7"
+                    ]
+                }
+            }
+        },
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S2-datastore1-2TB",
+                    "url": "/vmfs/volumes/60474c5a-02c113f0-ac98-e0071bf7775c/"
+                },
+                {
+                    "name": "S2-datastore2-43.6TB",
+                    "url": "/vmfs/volumes/604a1f1a-a8a706e8-9521-e0071bf7775c/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S2-TWO",
+            "instance_uuid": "528b5c4a-b254-4ab6-934f-5f359ef5afe7",
+            "ip_address": "172.21.131.222",
+            "mac_address": [
+                "00:0c:29:89:fa:fb",
+                "00:50:56:a2:50:0a",
+                "00:50:56:a2:bb:23"
+            ],
+            "moid": "2",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "564d271e-f646-e8ca-738e-0c13fc89fafb",
+            "vm_network": {
+                "00:0c:29:89:fa:fb": {
+                    "ipv4": [
+                        "172.21.131.222"
+                    ],
+                    "ipv6": []
+                },
+                "00:50:56:a2:bb:23": {
+                    "ipv4": [
+                        "2.2.2.222"
+                    ],
+                    "ipv6": []
+                }
+            }
+        },
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S2-datastore1-2TB",
+                    "url": "/vmfs/volumes/60474c5a-02c113f0-ac98-e0071bf7775c/"
+                },
+                {
+                    "name": "S2-datastore2-43.6TB",
+                    "url": "/vmfs/volumes/604a1f1a-a8a706e8-9521-e0071bf7775c/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S2-THREE",
+            "instance_uuid": "52d3318f-94d0-0ddc-3dec-aac61846f87f",
+            "ip_address": "",
+            "mac_address": [
+                "00:0c:29:42:10:04",
+                "00:50:56:a2:73:91"
+            ],
+            "moid": "3",
+            "power_state": "poweredOff",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "564d4fd5-1d3e-8fe1-0525-43acff421004",
+            "vm_network": {}
+        },
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S2-datastore1-2TB",
+                    "url": "/vmfs/volumes/60474c5a-02c113f0-ac98-e0071bf7775c/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Ubuntu Linux (64-bit)",
+            "guest_name": "Ubuntu-OS",
+            "instance_uuid": "52ba5157-4071-ebc5-c058-eabfeca70721",
+            "ip_address": "172.21.131.6",
+            "mac_address": [
+                "00:0c:29:b8:c0:62",
+                "00:0c:29:b8:c0:6c",
+                "00:0c:29:b8:c0:76"
+            ],
+            "moid": "5",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "564d0fec-1bf9-4fb0-65da-0e6d8ab8c062",
+            "vm_network": {
+                "00:0c:29:b8:c0:62": {
+                    "ipv4": [
+                        "172.21.131.6"
+                    ],
+                    "ipv6": [
+                        "fe80::98ee:9416:d75e:8a8"
+                    ]
+                },
+                "00:0c:29:b8:c0:6c": {
+                    "ipv4": [],
+                    "ipv6": []
+                },
+                "00:0c:29:b8:c0:76": {
+                    "ipv4": [],
+                    "ipv6": []
+                }
+            }
+        }
+    ]
+}

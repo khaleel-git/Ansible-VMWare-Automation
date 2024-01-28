@@ -1,0 +1,102 @@
+{
+    "changed": false,
+    "failed": false,
+    "virtual_machines": [
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S3-datastore1-2TB",
+                    "url": "/vmfs/volumes/606c3426-97c2c0e3-95ea-1c98ec279528/"
+                },
+                {
+                    "name": "S3-datastore2-43.6TB",
+                    "url": "/vmfs/volumes/606d70a9-242655cd-2edc-1c98ec279528/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S3-ONE",
+            "instance_uuid": "5022ffce-bf70-976e-a88a-7be343ab571f",
+            "ip_address": "1.1.1.231",
+            "mac_address": [
+                "00:50:56:a2:70:5a",
+                "00:50:56:a2:0e:31",
+                "00:50:56:a2:4f:c1"
+            ],
+            "moid": "3",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "4222513b-7b8e-184e-bceb-c4eca78af81c",
+            "vm_network": {
+                "00:50:56:a2:0e:31": {
+                    "ipv4": [
+                        "1.1.1.231"
+                    ],
+                    "ipv6": []
+                },
+                "00:50:56:a2:4f:c1": {
+                    "ipv4": [
+                        "2.2.2.231"
+                    ],
+                    "ipv6": [
+                        "fe80::9416:643b:6f4c:db49"
+                    ]
+                },
+                "00:50:56:a2:70:5a": {
+                    "ipv4": [
+                        "172.21.131.231"
+                    ],
+                    "ipv6": []
+                },
+                "3a:b4:9d:a6:df:3c": {
+                    "ipv4": [
+                        "10.147.20.231"
+                    ],
+                    "ipv6": [
+                        "fc99:d982:ae89:3c90:4b83::1",
+                        "fe80::d515:45ac:6e10:3596"
+                    ]
+                }
+            }
+        },
+        {
+            "allocated": {},
+            "attributes": {},
+            "cluster": null,
+            "datacenter": "ha-datacenter",
+            "datastore_url": [
+                {
+                    "name": "S3-datastore1-2TB",
+                    "url": "/vmfs/volumes/606c3426-97c2c0e3-95ea-1c98ec279528/"
+                },
+                {
+                    "name": "S3-datastore2-43.6TB",
+                    "url": "/vmfs/volumes/606d70a9-242655cd-2edc-1c98ec279528/"
+                }
+            ],
+            "esxi_hostname": "localhost.localdomain",
+            "folder": "/ha-datacenter/vm",
+            "guest_fullname": "Microsoft Windows 10 (64-bit)",
+            "guest_name": "S3-TWO",
+            "instance_uuid": "50223482-b43c-ad50-f535-9e30af449a05",
+            "ip_address": "",
+            "mac_address": [
+                "00:50:56:a2:a2:48",
+                "00:50:56:a2:60:ff",
+                "00:50:56:a2:8f:66"
+            ],
+            "moid": "4",
+            "power_state": "poweredOn",
+            "resource_pool": null,
+            "tags": [],
+            "uuid": "422289c5-0ca7-d1e5-af81-c8feab6112c9",
+            "vm_network": {}
+        }
+    ]
+}
